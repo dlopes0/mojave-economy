@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Economy.MODID, name = Economy.NAME, version = Economy.VERSION)
@@ -23,9 +24,9 @@ public class Economy
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event)
+    public void init(FMLServerStartingEvent event)
     {
-        // some example code
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        logger.info("initalise FMLServerStartingEvent :" + NAME);
+        event.registerServerCommand(new Command());
     }
 }
