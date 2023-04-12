@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "mojave-economy",
+  "name": "Economy Mod from Project Mojave",
+  "description": "The official economy mod from Project Mojave",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["David Lopes"],
+  "credits": "All the Project Mojave team.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
